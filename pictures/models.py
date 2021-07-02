@@ -19,12 +19,12 @@ class Location(models.Model):
     def save_location(self):
         self.save() 
         
-# class Image(models.Model):
-#     image = models.ImageField(upload_to = 'articles/', blank=True, null=True)
-#     name = models.CharField(max_length =60)
-#     description = models.CharField(max_length =200)
-#     location = models.ForeignKey(Location,on_delete=models.PROTECT)
-#     category = models.ForeignKey(Category,on_delete=models.PROTECT)
+class Image(models.Model):
+    image = models.ImageField(upload_to = 'articles/', blank=True, null=True)
+    name = models.CharField(max_length =60)
+    description = models.CharField(max_length =200)
+    location = models.ForeignKey(Location,on_delete=models.PROTECT)
+    category = models.ForeignKey(Category,on_delete=models.PROTECT)
 
 
 #     def __str__(self):
