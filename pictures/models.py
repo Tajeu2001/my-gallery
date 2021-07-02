@@ -45,3 +45,6 @@ class Image(models.Model):
         images = cls.objects.filter(category__name__icontains=category)
         return images    
 
+    def filter_by_location(cls, location):
+        image_location = Image.objects.filter(location__name=location).all()
+        return image_location
