@@ -10,14 +10,14 @@ class Category(models.Model):
     def save_category(self):
         self.save()    
 
-# class Location(models.Model):
-#     name = models.CharField(max_length=60)
+class Location(models.Model):
+    name = models.CharField(max_length=60)
 
-#     def __str__(self):
-#         return self.name
+    def __str__(self):
+        return self.name
 
-#     def save_location(self):
-#         self.save() 
+    def save_location(self):
+        self.save() 
         
 # class Image(models.Model):
 #     image = models.ImageField(upload_to = 'articles/', blank=True, null=True)
