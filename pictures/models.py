@@ -27,14 +27,14 @@ class Image(models.Model):
     category = models.ForeignKey(Category,on_delete=models.PROTECT)
 
 
-#     def __str__(self):
-#         return self.name
+    def __str__(self):
+        return self.name
 
-#     def save_image(self):
-#         self.save()       
+    def save_image(self):
+        self.save()       
 
-#     def delete_image(self):
-#         self.delete()
+    def delete_image(self):
+        self.delete()
     
 #     @classmethod
 #     def update_image(cls, id, value):
