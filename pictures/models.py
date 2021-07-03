@@ -8,7 +8,13 @@ class Category(models.Model):
         return self.name
 
     def save_category(self):
-        self.save()    
+        self.save()
+
+    def delete_category(self):
+        self.delete()        
+    
+    def update_category(cls, id, value):
+        cls.objects.filter(id=id).update(category=value)
 
 class Location(models.Model):
     name = models.CharField(max_length=60)
@@ -18,6 +24,13 @@ class Location(models.Model):
 
     def save_location(self):
         self.save() 
+
+    def delete_location(self):
+        self.delete()  
+
+    def update_location(cls, id, value):
+        cls.objects.filter(id=id).update(location=value)
+        
         
 class Image(models.Model):
     image = models.ImageField(upload_to = 'articles/', blank=True, null=True)
