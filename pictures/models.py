@@ -33,7 +33,7 @@ class Location(models.Model):
         
         
 class Image(models.Model):
-    image = models.ImageField(upload_to = 'articles/', blank=True, null=True)
+    image = models.ImageField(upload_to = 'articles/', null=True)
     name = models.CharField(max_length =60)
     description = models.CharField(max_length =200)
     location = models.ForeignKey(Location,on_delete=models.PROTECT)
@@ -61,3 +61,8 @@ class Image(models.Model):
     def filter_by_location(cls, location):
         image_location = Image.objects.filter(location__name=location).all()
         return image_location
+
+    @classmethod
+    def get_image_by_id(cls, id):
+        image = cls.objects.filter(id=id).all()
+        return image
