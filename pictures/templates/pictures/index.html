@@ -1,14 +1,28 @@
 {%extends 'base.html'%}
 {% block content %}
-<h1 class="text-center">{{title}}</h1>
+<h1 class="text-center welcome">{{title}}</h1>
+<div class="container cat-list">
+  <h4 class="list-heading">Category List</h4>
+  <table>
+    <tr>
+      <th>Flowers</th>
+      <th>Food</th>
+      <th>Night Life</th>
+      <th>Dream Houses</th>
+      <th>Memes</th>
+      <th>Scenery</th>
+      <th>Music</th>
+    </tr>
+  </table>
+</div>
 <div class="container home">
 {% if images %}
     {% for image in images %}
-      <div class=" col-md-3 card">
-          <img src="{{image.image.url}}" class="img-responsive" alt="{{image.name}}">
+      <div class=" col-md-3 card box-shadow">
+          <img src="{{image.image.url}}" class="img-responsive card-img" alt="{{image.name}}" >
       </div>
     {% endfor %}
-    
 {% endif %}
+<hr>
 </div>
 {%endblock%}
