@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{% block content %}
+<h1 class="text-center">{{title}}</h1>
+<div class="container home">
+{% if images %}
+    {% for image in images %}
+      <div class=" col-md-3 card">
+          <img src="{{image.image.url}}" class="img-responsive" alt="{{image.name}}">
+      </div>
+    {% endfor %}
+    
+{% endif %}
+</div>
+{%endblock%}
