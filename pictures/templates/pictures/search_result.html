@@ -14,7 +14,37 @@
       <div class="col-sm-6 col-md-3 card">
           <img src="{{image.image.url}}" class="img-responsive card-img"alt="{{image.name}} ">
       </div>
-    {% endfor %}
+    {%endfor%}
+
+    <div class="container">
+    
+      <!-- Modal -->
+      {% for image in images %}
+      <div class="modal"  role="dialog" id="l-modal" onclick="this.style.display='none'">
+          <!-- Modal content-->
+          <div class="modal-content modalcard" >
+            <div class="modal-header">
+              <p>PIC INFO</p>
+            </div>
+            <div class="modal-body">
+              
+              <img  style="max-width:100%" class="img-fluid"  id="l-image">
+              <p>Name: {{image.name}}</p>
+              <p>Description:{{image.description}}</p>
+              <p>Location: {{image.location}}</p>
+              <p>Category: {{image.category}}</p>
+              
+            </div>
+            <div class="modal-footer">
+              <input class="form-control input-lg" type="text" value="{{image.image.url}}" id="{{image.id}}.url">
+              <button class="btn btn-success btn-sm" onclick="copyLink('{{image.id}}.url')">Copy</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    {% endfor %} 
+    
   {% endif %}
   
 </div>

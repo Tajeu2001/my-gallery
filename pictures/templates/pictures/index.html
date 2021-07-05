@@ -21,10 +21,11 @@
       <div class=" col-md-3 card box-shadow">
           <img id="index-image"src="{{image.image.url}}" class="img-responsive card-img" alt="{{image.name}}" onclick="onClick(this)" >
       </div>
-    {% endfor %}
+      {% endfor %}
     <div class="container">
     
       <!-- Modal -->
+      {% for image in images %}
       <div class="modal"  role="dialog" id="l-modal" onclick="this.style.display='none'">
           <!-- Modal content-->
           <div class="modal-content modalcard" >
@@ -33,7 +34,7 @@
             </div>
             <div class="modal-body">
               
-              <img  style="max-width:100%" class="img-fluid"  id="l-image">
+              <img  style="max-width:100%" class="img-fluid"  id="l-image" height="500px">
               <p>{{image.name}}</p>
               <p>{{image.description}}</p>
               <p>{{image.location}}</p>
@@ -48,7 +49,7 @@
           </div>
       </div>
     </div>
-    
+    {% endfor %}  
 {% endif %}
 </div>
 {%endblock%}

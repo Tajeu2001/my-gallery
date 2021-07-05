@@ -10,18 +10,6 @@ A project to share my favourite photos with everyone. The photos have been organ
 * You will now have the repository in your local folder.
 
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-
-
 ## Deployment
 
 Deploy the project to heroku.
@@ -34,6 +22,8 @@ Deploy the project to heroku.
 
 
 ## Live link
+
+https://her-gallery.herokuapp.com/
 
 ## Author
 
