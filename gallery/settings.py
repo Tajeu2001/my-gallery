@@ -29,8 +29,6 @@ SECRET_KEY = '73*(e#u0e-yozfoi7wnqs76#x^-6h1ksx)s7x+imfi+$)ce-p-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-db_from_env = dj_database_url.config()
-DATABASES['default'].update(db_from_env)
 
 ALLOWED_HOSTS = []
 
@@ -94,6 +92,9 @@ DATABASES = {
     'PASSWORD':'siantayo15',
     }
 }
+
+db_from_env = dj_database_url.config()
+DATABASES={'default':dj_database_url.config(conn_max_age=500)}
 
 
 # Password validation
