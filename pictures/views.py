@@ -5,7 +5,7 @@ from .models import Image, Location,Category
 def index(request):
     images = Image.objects.all()
     title = "Welcome to Her Gallery"
-    return render(request, 'pictures/index.html',{"images":images , "title":title})
+    return render(request, 'pictures/index.html',{"image":images , "title":title})
 
 def search_results(request):
 
