@@ -1,11 +1,13 @@
 from django.shortcuts import render
 from .models import Image, Location,Category
+from django.http import HttpResponse ,Http404
 
 # Create your views here.
 def index(request):
     images = Image.objects.all()
+    print(request)
     title = "Welcome to Her Gallery"
-    return render(request, 'pictures/index.html',{"image":images , "title":title})
+    return render(request, 'pictures/index.html',{"images":images , "title":title})
 
 def search_results(request):
 

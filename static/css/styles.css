@@ -79,3 +79,11 @@ th{
   margin-top: 3%;
   text-align: center;
 }
+
+#info {
+  color:black;
+}
+
+.modal{
+  background-color: grey; 
+}
