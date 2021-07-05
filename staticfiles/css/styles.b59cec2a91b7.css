@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Yatra+One&family=Zen+Tokyo+Zoo&display=swap');
+body {
+  background-image: url("/static/images/marcos-paulo-prado-skB1nbKEhlQ-unsplash.25f5cd7512b0.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-blend-mode:darken;
+  background-color: rgba(0, 0, 0, 0.698); 
+  font-family: 'Yatra One', cursive;
+}
+
+/* .box-shadow {
+  box-shadow:0 0 15px 5px #fcf5f5;
+  padding: 40px;
+  height: 300px;
+} */
+
+.card-img{
+  box-shadow:0 0 5px 3px #fcf5f5;
+  margin-top: 10px;
+  padding:8px;
+  height: 300px;
+  width: 400px;
+}
+.home {
+  margin-top: 8%;
+}
+
+.image-result {
+  margin-top: 5%;
+}
+
+.navbar{
+  background-color: rgb(4, 85, 105);
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+
+}
+
+.her-gallery{
+  font-size: 25px;
+  color:white;
+}
+
+.welcome {
+  color:white;
+  font-size: 70px;
+  font-family: 'Great Vibes', cursive;
+  margin-top: 3%;
+}
+
+table {
+  color:white;
+  border-collapse: collapse;
+  padding: 22px;
+  margin-left: 15%;
+}
+th{
+  border: 1px solid #eef1f3;
+  padding: 15px;
+}
+
+.cat-list{
+  margin-top: 5%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.list-heading{
+  font-size: 30px;
+  
+}
+
+.result-header{
+  color: white;
+  margin-top: 3%;
+  text-align: center;
+}
