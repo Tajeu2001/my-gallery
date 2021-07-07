@@ -2,12 +2,20 @@
 
 A project to share my favourite photos with everyone. The photos have been organized in categories.Details on each of the photos has been shared,this icludes the name, description and location.
 
+## Prerequisite
+
+* Text Editor
+* Python3
+* Git
+
 ## Getting Started
 
 * Install git in your computer.
 * Open termimal.
 * Clone the repository using the command $git clone.
 * You will now have the repository in your local folder.
+
+### View of the application homepage
 
 
 ## Deployment
@@ -19,7 +27,7 @@ Deploy the project to heroku.
 * Django
 * Python
 * Bootstrap
-
+* Javascript
 
 ## Live link
 
