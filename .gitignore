@@ -1,5 +1,4 @@
 ### Django ###
-virtual/
 
 *.log
 *.pot
@@ -123,6 +122,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+virtual/
 
 # Spyder project settings
 .spyderproject

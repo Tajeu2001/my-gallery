@@ -16,7 +16,23 @@ A project to share my favourite photos with everyone. The photos have been organ
 * You will now have the repository in your local folder.
 
 ### View of the application homepage
+
+The homepage contains all the pictures and a list of the available categories.
+
 ![alt text](https://github.com/Tajeu2001/my-gallery/blob/master/static/images/gallery-hp.png)
+
+### View of the search_results page
+
+The search_result page is where the user is directed after searching for a specific category.
+
+![alt text](https://github.com/Tajeu2001/my-gallery/blob/master/static/images/gallery-search.png)
+
+## User Story
+
+* Users view images
+* Click an image to view a larger version of it plus details on it.
+* Copy link to a photo.
+* Search for photos using their category.
 
 ## Deployment
 
