@@ -1,4 +1,6 @@
 ### Django ###
+virtual/
+
 *.log
 *.pot
 *.pyc

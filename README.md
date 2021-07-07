@@ -16,7 +16,7 @@ A project to share my favourite photos with everyone. The photos have been organ
 * You will now have the repository in your local folder.
 
 ### View of the application homepage
-
+![alt text](https://github.com/Tajeu2001/my-gallery/blob/master/static/images/gallery-hp.png)
 
 ## Deployment
 
