@@ -1,8 +1,8 @@
-# My Gallery
+# Her Gallery
 
 A project to share my favourite photos with everyone. The photos have been organized in categories.Details on each of the photos has been shared,this icludes the name, description and location.
 
-## Prerequisite
+## Prerequisites
 
 * Text Editor
 * Python3
